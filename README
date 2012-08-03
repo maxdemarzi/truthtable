@@ -1,18 +1,13 @@
 = truthtable - truth table to logical formula
 
-The truthtable library generates a truth table from
-a logical formula written in Ruby.
+The truthtable library generates a truth table from a logical formula written in Ruby.
 The truth table can be converted to a logical formula.
 
-== Author
+== Install
 
-Tanaka Akira <akr@fsij.org>
+    gem install 'truthtable'
 
-== Home Page
-
-http://www.a-k-r.org/truthtable/
-
-== Feature
+== Features
 
 * generate a truth table from a given block written in Ruby.
 * generate a formula from the table:
@@ -21,8 +16,6 @@ http://www.a-k-r.org/truthtable/
   * conjunctive normal form
 
 == Usage
-
-* require
 
   require 'truthtable'
 
@@ -98,47 +91,12 @@ http://www.a-k-r.org/truthtable/
    p TruthTable.new {|v| [v[0], v[1], v[2], v[3]].grep(true).length <= 3 }.formula
    #=> "!v[0] | !v[1] | !v[2] | !v[3]"
 
-== Requirements
-
-* ruby : http://www.ruby-lang.org/
-
-== Download
-
-* latest release: http://www.a-k-r.org/truthtable/truthtable-0.1.tar.gz
-
-* development version: http://github.com/akr/truthtable
-
-== Install
-
-  % ruby install.rb
 
 == Reference Manual
 
 See rdoc/classes/TruthTable.html or
 http://www.a-k-r.org/truthtable/rdoc/TruthTable.html
 
-== License
+== Home Page
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-(1) Redistributions of source code must retain the above copyright notice, this
-    list of conditions and the following disclaimer.
-(2) Redistributions in binary form must reproduce the above copyright notice,
-    this list of conditions and the following disclaimer in the documentation
-    and/or other materials provided with the distribution.
-(3) The name of the author may not be used to endorse or promote products
-    derived from this software without specific prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
-WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
-EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
-OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
-IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
-OF SUCH DAMAGE.
-
-(The modified BSD licence)
+http://www.a-k-r.org/truthtable/
