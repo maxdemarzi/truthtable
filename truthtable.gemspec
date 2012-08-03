@@ -18,5 +18,6 @@ Gem::Specification.new do |gem|
   gem.version       = Truthtable::VERSION
 
   gem.add_development_dependency "rspec"
+  gem.add_development_dependency "gem-release"
   gem.add_dependency "msgpack"
 end
